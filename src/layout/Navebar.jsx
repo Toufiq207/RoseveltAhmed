@@ -42,7 +42,7 @@ const Navebar = () => {
   }
 
   return (
-    <nav className='fixed left-0 top-0 z-50 w-full bg-gray-900'>
+    <nav className='fixed left-0 top-0 z-50 w-full bg-gray-900 py-0  sm:py-4 '>
       <Container className='relative flex h-[90px] items-center justify-between'>
 
         {/* Logo */}
