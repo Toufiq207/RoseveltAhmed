@@ -6,6 +6,7 @@ import Service from './layout/Service'
 import Contact from './layout/Contact'
 import Faq from './layout/Faq'
 import Navebar from './layout/Navebar'
+import Footer from './layout/Footer'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Service/>
       <Faq/>
       <Contact/>
+      <Footer/>
     </div>
   )
 }
