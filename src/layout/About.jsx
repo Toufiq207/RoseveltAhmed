@@ -6,7 +6,8 @@ import Container from '../Component/Container'
 
 const About = () => {
   return (
-    <section id="about" className='mt-10 sm:mt-14 pb-10 sm:pb-16'>
+    <section  id="about"
+  className="scroll-mt-[90px] mt-10 pb-10 sm:mt-14 sm:pb-16">
       <Container>
 
         {/* Section Heading */}

@@ -14,14 +14,44 @@ const Navebar = () => {
     { name: 'Contact', link: '#contact' },
   ]
 
+  const handleMenuClick = (e, link) => {
+    e.preventDefault()
+    setOpen(false)
+
+    const section = document.querySelector(link)
+
+    if (section) {
+      const navbar = document.querySelector('nav')
+      const navbarHeight = navbar?.offsetHeight || 90
+
+      const heading = section.querySelector('h1, h2, h3')
+
+      const target = heading || section
+
+      const targetPosition =
+        target.getBoundingClientRect().top +
+        window.scrollY -
+        navbarHeight -
+        10
+
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth',
+      })
+    }
+  }
+
   return (
-    <nav className='bg-gray-900 fixed w-full  '>
-      <Container className='relative flex items-center justify-between py-3 sm:py-4'>
+    <nav className='fixed left-0 top-0 z-50 w-full bg-gray-900'>
+      <Container className='relative flex h-[90px] items-center justify-between'>
 
         {/* Logo */}
-        <a href='#home'>
+        <a
+          href='#home'
+          onClick={(e) => handleMenuClick(e, '#home')}
+        >
           <Image
-            className='w-[100px] rounded-full sm:w-[130px] lg:w-[150px]'
+            className='w-[50px] rounded-full sm:w-[90px] lg:w-[110px]'
             src={Logo}
           />
         </a>
@@ -33,6 +63,7 @@ const Navebar = () => {
               <li key={item.name}>
                 <a
                   href={item.link}
+                  onClick={(e) => handleMenuClick(e, item.link)}
                   className='text-lg font-normal text-white transition hover:font-bold xl:text-2xl'
                 >
                   {item.name}
@@ -42,7 +73,7 @@ const Navebar = () => {
           </ul>
         </div>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Button */}
         <button
           onClick={() => setOpen(!open)}
           className='text-3xl text-white lg:hidden'
@@ -61,7 +92,7 @@ const Navebar = () => {
                 >
                   <a
                     href={item.link}
-                    onClick={() => setOpen(false)}
+                    onClick={(e) => handleMenuClick(e, item.link)}
                     className='block text-lg text-white'
                   >
                     {item.name}
@@ -76,5 +107,4 @@ const Navebar = () => {
     </nav>
   )
 }
-
 export default Navebar
