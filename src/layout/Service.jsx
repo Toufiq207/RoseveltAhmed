@@ -58,7 +58,7 @@ const Service = () => {
   }
 
   return (
-    <section className='mt-14'>
+    <section className='mt-14' id='service'>
       <Container>
 
         <Heading text='Service' />

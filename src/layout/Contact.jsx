@@ -4,7 +4,7 @@ import Heading from '../Component/Heading'
 
 const Contact = () => {
   return (
-    <section className='mt-10 sm:mt-14 pb-10 sm:pb-16'>
+    <section className='mt-10 sm:mt-14 pb-10 sm:pb-16' id='contact'>
       <Container>
 
         {/* Heading */}

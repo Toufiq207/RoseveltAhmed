@@ -6,7 +6,7 @@ import Container from '../Component/Container'
 
 const About = () => {
   return (
-    <section className='mt-10 sm:mt-14 pb-10 sm:pb-16'>
+    <section id="about" className='mt-10 sm:mt-14 pb-10 sm:pb-16'>
       <Container>
 
         {/* Section Heading */}

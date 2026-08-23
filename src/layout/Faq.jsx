@@ -32,7 +32,7 @@ const Faq = () => {
   }
 
   return (
-    <section className='mt-14 pb-16'>
+    <section id='faq' className='mt-14 pb-16'>
       <div className='mx-auto w-full max-w-4xl px-4'>
 
         {/* Heading */}
