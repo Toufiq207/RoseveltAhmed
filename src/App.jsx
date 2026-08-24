@@ -7,6 +7,9 @@ import Contact from './layout/Contact'
 import Faq from './layout/Faq'
 import Navebar from './layout/Navebar'
 import Footer from './layout/Footer'
+import Skill from './layout/Skill'
+import Experience from './layout/Experience'
+import Project from './layout/Project'
 
 const App = () => {
   return (
@@ -16,6 +19,9 @@ const App = () => {
       <About/>
       <Service/>
       <Faq/>
+      <Skill/>
+      <Experience/>
+      <Project/>
       <Contact/>
       <Footer/>
     </div>
