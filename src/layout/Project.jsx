@@ -165,7 +165,7 @@ const project = [
 ]
 const Project = () => {
   return (
-    <section className='my-10'>
+    <section id='project'  className='my-10'>
         <Container>
             <Heading className='mb-10' text="Project"/>
 <div  className=' flex justify-center flex-wrap gap-12'>

@@ -90,7 +90,7 @@ const Contact = () => {
               </a>
 
               <a
-                href="mailto:rujvelt@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=lijonlijon30@gmail.com" target="_blank" rel="noopener noreferrer"
                 className="rounded-lg bg-black px-6 py-3 text-center font-semibold text-white hover:bg-gray-800"
               >
                 Email Me
