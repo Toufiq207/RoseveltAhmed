@@ -1,7 +1,8 @@
 import React from 'react'
 import Container from '../Component/Container'
 import Heading from '../Component/Heading'
-
+import { FaWhatsapp } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 const Contact = () => {
   return (
     <section id="contact" className="pb-16">
@@ -31,23 +32,31 @@ const Contact = () => {
               digital marketing strategies.
             </p>
 
-            <a
-              href="https://wa.me/8801716115480"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mb-5 block border-b border-gray-700 pb-5"
-            >
-              <p className="text-sm text-gray-400">WhatsApp</p>
-              <p className="font-semibold">+880 1716-115480</p>
-            </a>
+         <a
+  href="https://wa.me/8801716115480"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mb-5 flex items-center gap-4 border-b border-gray-700 pb-5"
+>
+  <FaWhatsapp className="text-3xl text-green-500" />
 
-            <a
-              href="mailto:rujvelt@gmail.com"
-              className="mb-5 block border-b border-gray-700 pb-5"
-            >
-              <p className="text-sm text-gray-400">Email</p>
-              <p className="font-semibold">rujvelt@gmail.com</p>
-            </a>
+  <div>
+    <p className="text-sm text-gray-400">WhatsApp</p>
+    <p className="font-semibold">+880 1716-115480</p>
+  </div>
+</a>
+
+<a
+  href="mailto:rujvelt@gmail.com"
+  className="mb-5 flex items-center gap-4 border-b border-gray-700 pb-5"
+>
+  <MdEmail className="text-3xl text-red-500" />
+
+  <div>
+    <p className="text-sm text-gray-400">Email</p>
+    <p className="font-semibold">rujvelt@gmail.com</p>
+  </div>
+</a>
 
             <div>
               <p className="text-sm text-gray-400">Location</p>

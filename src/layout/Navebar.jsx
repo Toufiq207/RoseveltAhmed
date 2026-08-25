@@ -11,7 +11,10 @@ const Navebar = () => {
     { name: 'About', link: '#about' },
     { name: 'Service', link: '#service' },
     { name: 'Faq', link: '#faq' },
+     { name: 'Skills', link: '#skills' },
+     { name: 'Experience', link: '#experience' },
     { name: 'Contact', link: '#contact' },
+   
   ]
 
   const handleMenuClick = (e, link) => {
