@@ -47,14 +47,14 @@ const Contact = () => {
 </a>
 
 <a
-  href="mailto:rujvelt@gmail.com"
+   href="https://mail.google.com/mail/?view=cm&fs=1&to=rosevelt2010@gmail.com" target="_blank" rel="noopener noreferrer"
   className="mb-5 flex items-center gap-4 border-b border-gray-700 pb-5"
 >
   <MdEmail className="text-3xl text-red-500" />
 
   <div>
     <p className="text-sm text-gray-400">Email</p>
-    <p className="font-semibold">rujvelt@gmail.com</p>
+    <p className="font-semibold">rosevelt2010@gmail.com</p>
   </div>
 </a>
 
