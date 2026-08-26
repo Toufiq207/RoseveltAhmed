@@ -10,7 +10,7 @@ const Navebar = () => {
     { name: 'Home', link: '#home' },
     { name: 'About', link: '#about' },
     { name: 'Service', link: '#service' },
-    { name: 'Faq', link: '#faq' },
+    { name: 'FAQ', link: '#faq' },
      { name: 'Skills', link: '#skills' },
      { name: 'Experience', link: '#experience' },
      { name: 'Project', link: '#project' },

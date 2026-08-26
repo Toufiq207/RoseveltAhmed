@@ -14,16 +14,58 @@ import Project from './layout/Project'
 const App = () => {
   return (
     <div>
-      <Navebar/>
-      <Hero/>
-      <About/>
-      <Service/>
-      <Faq/>
-      <Skill/>
-      <Experience/>
-      <Project/>
-      <Contact/>
-      <Footer/>
+
+      {/* Navigation */}
+      <Navebar />
+
+      {/* Main Content */}
+      <main>
+
+        {/* Home / Hero */}
+        <section id="home">
+          <Hero />
+        </section>
+
+        {/* About */}
+        <section id="about">
+          <About />
+        </section>
+
+        {/* Services */}
+        <section id="service">
+          <Service />
+        </section>
+
+        {/* FAQ */}
+        <section id="faq">
+          <Faq />
+        </section>
+
+        {/* Skills */}
+        <section id="skills">
+          <Skill />
+        </section>
+
+        {/* Experience */}
+        <section id="experience">
+          <Experience />
+        </section>
+
+        {/* Projects */}
+        <section id="project">
+          <Project />
+        </section>
+
+        {/* Contact */}
+        <section id="contact">
+          <Contact />
+        </section>
+
+      </main>
+
+      {/* Footer */}
+      <Footer />
+
     </div>
   )
 }

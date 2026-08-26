@@ -1,124 +1,147 @@
-import React from "react";
-import Container from "../Component/Container";
-import Heading from "../Component/Heading";
+import React from 'react'
+import Container from '../Component/Container'
+import Heading from '../Component/Heading'
 
 const skills = [
   {
-    name: "Production / Operation Management",
-    category: "Garments / Textile",
-    level: "Expert",
+    name: 'Production / Operation Management',
+    category: 'Garments / Textile',
+    level: 'Expert',
   },
   {
-    name: "Industrial Engineering",
-    category: "Garments / Textile",
-    level: "Expert",
+    name: 'Industrial Engineering',
+    category: 'Garments / Textile',
+    level: 'Expert',
   },
   {
-    name: "Production Planning",
-    category: "Management",
-    level: "Expert",
+    name: 'Production Planning',
+    category: 'Management',
+    level: 'Expert',
   },
   {
-    name: "LEAN Manufacturing",
-    category: "Manufacturing",
-    level: "Advanced",
+    name: 'LEAN Manufacturing',
+    category: 'Manufacturing',
+    level: 'Advanced',
   },
   {
-    name: "Continuous Improvement",
-    category: "Process Management",
-    level: "Advanced",
+    name: 'Continuous Improvement',
+    category: 'Process Management',
+    level: 'Advanced',
   },
   {
-    name: "Quality Assurance & Control",
-    category: "Quality Management",
-    level: "Advanced",
+    name: 'Quality Assurance & Control',
+    category: 'Quality Management',
+    level: 'Advanced',
   },
   {
-    name: "Root Cause Analysis",
-    category: "Problem Solving",
-    level: "Advanced",
+    name: 'Root Cause Analysis',
+    category: 'Problem Solving',
+    level: 'Advanced',
   },
   {
-    name: "Problem Solving & Decision Making",
-    category: "Management",
-    level: "Advanced",
+    name: 'Problem Solving & Decision Making',
+    category: 'Management',
+    level: 'Advanced',
   },
   {
-    name: "Standard Operating Procedure",
-    category: "SOP",
-    level: "Advanced",
+    name: 'Standard Operating Procedure',
+    category: 'SOP',
+    level: 'Advanced',
   },
   {
-    name: "Cost Reduction",
-    category: "Business Improvement",
-    level: "Advanced",
+    name: 'Cost Reduction',
+    category: 'Business Improvement',
+    level: 'Advanced',
   },
   {
-    name: "Process Improvement",
-    category: "Manufacturing",
-    level: "Expert",
+    name: 'Process Improvement',
+    category: 'Manufacturing',
+    level: 'Expert',
   },
   {
-    name: "Performance Monitoring",
-    category: "KPI / Management",
-    level: "Advanced",
+    name: 'Performance Monitoring',
+    category: 'KPI / Management',
+    level: 'Advanced',
   },
   {
-    name: "Manufacturing Methods & Procedures",
-    category: "Production",
-    level: "Expert",
+    name: 'Manufacturing Methods & Procedures',
+    category: 'Production',
+    level: 'Expert',
   },
   {
-    name: "Follow Up",
-    category: "Operations",
-    level: "Advanced",
+    name: 'Follow Up',
+    category: 'Operations',
+    level: 'Advanced',
   },
   {
-    name: "KPI Management",
-    category: "Performance Management",
-    level: "Advanced",
+    name: 'KPI Management',
+    category: 'Performance Management',
+    level: 'Advanced',
   },
   {
-    name: "Team Leading",
-    category: "Leadership",
-    level: "Expert",
+    name: 'Team Leading',
+    category: 'Leadership',
+    level: 'Expert',
   },
-];
+]
 
 const Skill = () => {
   return (
-    <section id="skills" className="py-16">
+    <section
+      id="skills"
+      className="scroll-mt-[90px] py-16"
+      aria-labelledby="skills-heading"
+    >
       <Container>
-        {/* Heading */}
-        <div className="mb-10 text-center sm:mb-12">
-          <Heading text="Skills & Expertise" />
+
+        {/* Section Heading */}
+        <div
+          id="skills-heading"
+          className="mb-10 text-center sm:mb-12"
+        >
+          <Heading text="Professional Skills & Expertise" />
 
           <p className="mx-auto mt-3 max-w-2xl px-4 text-sm leading-6 text-gray-600 sm:text-base">
-            Professional expertise in production management, industrial
-            engineering, process improvement, and manufacturing operations.
+            Professional expertise in production and operation management,
+            industrial engineering, production planning, LEAN manufacturing,
+            quality management, process improvement, cost reduction and team
+            leadership.
           </p>
         </div>
 
         {/* Skills Grid */}
-        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div
+          className="mx-auto grid max-w-6xl grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3"
+          role="list"
+          aria-label="Professional skills"
+        >
           {skills.map((skill, index) => (
-            <div
-              key={index}
+            <article
+              key={skill.name}
+              role="listitem"
               className="group rounded-2xl border border-gray-100 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-gray-200 hover:shadow-lg"
             >
+
               {/* Top */}
               <div className="flex items-start justify-between gap-3">
+
                 <div className="flex items-start gap-3">
+
                   {/* Number */}
-                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-black text-sm font-bold text-white">
-                    {String(index + 1).padStart(2, "0")}
+                  <div
+                    className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-black text-sm font-bold text-white"
+                    aria-hidden="true"
+                  >
+                    {String(index + 1).padStart(2, '0')}
                   </div>
 
                   {/* Skill Name */}
                   <h3 className="pt-1 text-base font-bold leading-6 text-gray-900">
                     {skill.name}
                   </h3>
+
                 </div>
+
               </div>
 
               {/* Category */}
@@ -126,33 +149,44 @@ const Skill = () => {
                 {skill.category}
               </p>
 
-              {/* Level */}
+              {/* Expertise Level */}
               <div className="mt-4 flex items-center justify-between">
+
                 <span className="text-xs font-medium text-gray-500">
-                  Expertise
+                  Expertise Level
                 </span>
 
                 <span className="rounded-full bg-gray-100 px-3 py-1 text-xs font-semibold text-gray-700">
                   {skill.level}
                 </span>
+
               </div>
 
               {/* Progress */}
-              <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-gray-100">
+              <div
+                className="mt-3 h-1.5 overflow-hidden rounded-full bg-gray-100"
+                role="progressbar"
+                aria-label={`${skill.name} expertise level`}
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow={skill.level === 'Expert' ? 95 : 85}
+              >
                 <div
                   className={`h-full rounded-full bg-black transition-all duration-500 ${
-                    skill.level === "Expert"
-                      ? "w-[95%]"
-                      : "w-[85%]"
+                    skill.level === 'Expert'
+                      ? 'w-[95%]'
+                      : 'w-[85%]'
                   }`}
-                ></div>
+                />
               </div>
-            </div>
+
+            </article>
           ))}
         </div>
 
-        {/* Bottom Highlight */}
+        {/* Core Professional Strengths */}
         <div className="mx-auto mt-10 max-w-6xl rounded-2xl bg-black p-6 text-center text-white sm:p-8">
+
           <h3 className="text-xl font-bold sm:text-2xl">
             Core Professional Strengths
           </h3>
@@ -160,13 +194,15 @@ const Skill = () => {
           <p className="mx-auto mt-3 max-w-3xl text-sm leading-6 text-gray-300 sm:text-base">
             Production & Operation Management, Industrial Engineering,
             Production Planning, LEAN Manufacturing, Continuous Improvement,
-            Quality Control, Cost Reduction, KPI Management, and Team
-            Leadership.
+            Quality Assurance & Control, Cost Reduction, KPI Management,
+            Process Improvement, and Team Leadership.
           </p>
+
         </div>
+
       </Container>
     </section>
-  );
-};
+  )
+}
 
-export default Skill;
+export default Skill
