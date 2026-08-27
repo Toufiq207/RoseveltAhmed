@@ -101,7 +101,7 @@ const Project = () => {
           Facebook page, and Facebook group projects.
         </p>
 
-        <div className="flex flex-wrap justify-center gap-12">
+        <div className="flex flex-wrap justify-center gap-x-12 gap-y-20">
           {projects.map((item) => (
             <article key={item.id}>
               <ProjectComponent
