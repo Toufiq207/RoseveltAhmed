@@ -199,7 +199,7 @@ const Footer = () => {
                 <br />
 
                 <span className="font-semibold text-white">
-                  rujvelt@gmail.com
+                  rosevelt2010@gmail.com
                 </span>
               </a>
 
