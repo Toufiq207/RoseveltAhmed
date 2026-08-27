@@ -108,7 +108,7 @@ const Project = () => {
                 text={item.name}
                 img={item.img}
                 web={item.link}
-                category={item.category}
+                catagory={item.category}
                 alt={item.alt}
               />
             </article>
